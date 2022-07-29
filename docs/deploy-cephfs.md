@@ -10,7 +10,7 @@ CSI plugin can be compiled in the form of a binary file or in the form
 of a Docker image.
 When compiled as a binary file, the result is stored in `_output/`
 directory with the name `cephcsi`.
-When compiled as an image, it's stored in the local Docker image store
+When compiled as an image, it's stored in the local Docker image store///////
 with name `cephcsi`.
 
 Building binary:
@@ -158,13 +158,13 @@ kubectl create -f csi-config-map.yaml
 
 The configmap deploys an empty CSI configuration that is mounted as a volume
 within the Ceph CSI plugin pods. To add a specific Ceph clusters configuration
-details, refer to [Creating CSI configuration](../examples/README.md#creating-csi-configuration)
+details, refer to [Creating CSI configuration](fmples/README.md#creating-csi-configuration)
 for more information.
 
 **Deploy Ceph configuration ConfigMap for CSI pods:**
 
 ```bash
-kubectl create -f ../example/ceph-config.yaml
+kubectl create -f ../../../example/ceph-config.yaml
 ```
 
 **Deploy CSI sidecar containers:**
@@ -215,7 +215,7 @@ service/csi-cephfsplugin-provisioner   ClusterIP   10.101.78.75     <none>      
 
 Once the CSI plugin configuration is updated with details from a Ceph cluster of
 choice, you can try deploying a demo pod from examples/cephfs using the
-instructions [provided](../examples/README.md#deploying-the-storage-class) to
+instructions [provided](Fmples/README.md#deploying-the-storage-class) to
 test the deployment further.
 
 ### Notes on volume deletion
